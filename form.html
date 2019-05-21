@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function myFunction() {
+        alert("Página ha sido cargada");
+      }
+    </script>
+  </head>
+  <body onload="myFunction()">
+    <form class="registro" name="registro" action="" method="post">
+      <table>
+        <thead>
+        <tr>
+          <p><h3 id="title">Registrate</h3></p>
+        </tr>
+          </thead>
+        <tr>
+          <td><label for="">Nombre</label></td>
+          <td><input id="name-input" onblur="myFunction2()" type="text" name="name" value=""></td>
+        </tr>
+        <tr>
+          <td><label for="">Email</label></td>
+          <td><input id="email-input" type="text" name="email" value=""></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+          <button onkeydown="myFunction3()" type="button" name="send">OK</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      document.getElementById("title").innerHTML = "Registrate ahora!";
+    </script>
+    <script>
+      function myFunction2() {
+        var x= document.getElementById("name-input");
+        if(x.value == "Viridiana"){
+          alert("Hola Viridiana");
+        }
+      }
+    </script>
+    <script>
+      function myFunction3(){
+        alert("Haz presionado una tecla");
+      }
+
+    </script>
+
+  </body>
+</html>

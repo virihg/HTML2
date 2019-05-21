@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="result"></div>
+    <script>
+      //check browser support
+      if (typeof(Storage) !== "undefined") {
+        //Store
+        localStorage.setItem("Nombre", "Carlos");
+        // Retrieve
+        document.getElementById("result").innerHTML = localStorage.getItem("Nombre");
+      } else{
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+      }
+    </script>
+  </body>
+</html>
